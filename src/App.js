@@ -1,10 +1,17 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+import Main from "./Main/Main";
+
+import "./App.scss";
+
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <div className="App">
+      <Main/>
+      </div>
+    </BrowserRouter>
   );
 }
 
