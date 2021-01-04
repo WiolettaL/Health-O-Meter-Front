@@ -8,7 +8,7 @@ import "./LoggedUserPage.scss";
 const LoggedUserPage = () => {
     return (
         <React.Fragment>
-            <Navbar navMenuBtn1="Moje konto" linkTo1="/myaccount" navMenuBtn2="Wyloguj" linkTo2="/signout" />
+            <Navbar isLoggedIn={true} navMenuBtn1="Moje konto" linkTo1="/myaccount" navMenuBtn2="Wyloguj" linkTo2="/signout" />
             <Footer />
         </React.Fragment>
     )

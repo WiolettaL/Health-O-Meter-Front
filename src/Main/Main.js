@@ -11,6 +11,7 @@ const Main = () => {
             <Route path="/" exact component={Homepage} />
             <Route path="/signin" component={LoginPage} />
             <Route path="/logged" component={LoggedUserPage}/>
+            <Route path="/signout" component={Homepage}/> {/** Temporary route solution */}
         </React.Fragment>
     )
 }
