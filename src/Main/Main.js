@@ -1,10 +1,17 @@
 import React from "react";
+import { Route } from 'react-router-dom';
 
 import Homepage from "./Views/Homepage/Homepage";
+import LoginPage from "./Views/LoginPage/LoginPage";
+import LoggedUserPage from "./Views/LoggedUser/LoggedUserPage";
 
-const Main = ()=>{
-    return(
-        <Homepage />
+const Main = () => {
+    return (
+        <React.Fragment>
+            <Route path="/" exact component={Homepage} />
+            <Route path="/signin" component={LoginPage} />
+            <Route path="/logged" component={LoggedUserPage}/>
+        </React.Fragment>
     )
 }
 

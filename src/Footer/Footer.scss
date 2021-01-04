@@ -1,8 +1,10 @@
 .Footer{
     width: 100vw;
     height: 4rem;
-    background-color: #74915f;
-    position: absolute;
+    background-color: #143f3a;
     bottom: 0;
+    position: absolute;
+    margin-bottom: calc(100vh-4rem);
     text-align: center;
+    color: #65a099;
 }
