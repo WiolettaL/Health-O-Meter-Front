@@ -1,0 +1,16 @@
+.HeaderBox{
+    border: solid 1px #c2d6b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+        &-txt{
+            padding: 1.1rem;
+            font-size: 1.1rem;
+            color: #184d47;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+}
