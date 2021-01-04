@@ -8,7 +8,7 @@ import Footer from "../../../Footer/Footer";
 const Homepage = () => {
     return (
         <React.Fragment>
-            <Navbar navMenuBtn="Utwórz konto" navMenuBtn2="Zaloguj się" />
+            <Navbar navMenuBtn1="Utwórz konto" linkTo1="/signup" navMenuBtn2="Zaloguj się" linkTo2="/signin"/>
             <Header />
             <Footer />
         </React.Fragment>

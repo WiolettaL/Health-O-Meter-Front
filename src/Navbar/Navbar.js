@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,7 +18,7 @@ const Navbar = (props) => {
             flexGrow: 1,
         },
         button: {
-            marginRight: "2.5rem"
+            marginRight: "2.5rem",
         },
         appBar: {
             backgroundColor: "#184d47"
@@ -39,8 +40,12 @@ const Navbar = (props) => {
                 <Typography variant="h6" className={classes.title}>
                     Health-O-Meter
                 </Typography>
-                <Button className={classes.button} color="inherit">{props.navMenuBtn}</Button>
-                <Button className={classes.button} color="inherit">{props.navMenuBtn2}</Button>
+                <Link className="Link" to={props.linkTo1}>
+                    <Button className={classes.button} color="inherit">{props.navMenuBtn1}</Button>
+                </Link>
+                <Link className="Link" to={props.linkTo2}>
+                    <Button className={classes.button} color="inherit">{props.navMenuBtn2}</Button>
+                </Link>
             </Toolbar>
         </AppBar>
     )
