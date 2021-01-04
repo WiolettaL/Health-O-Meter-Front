@@ -29,13 +29,16 @@ const Navbar = (props) => {
         title: {
             flexGrow: 1,
         },
+        hidden:{
+            display: "none"
+        }
     }));
     const classes = useStyles();
     return (
         <AppBar className={classes.appBar} position="static">
             <Toolbar>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                    <MenuIcon /> {/** Remember to remove this menu icon. It will be onlyfor logged users */}
+                    {props.isLoggedIn ? <MenuIcon /> : <MenuIcon className={classes.hidden} />}
                 </IconButton>
                 <Typography variant="h6" className={classes.title}>
                     Health-O-Meter
