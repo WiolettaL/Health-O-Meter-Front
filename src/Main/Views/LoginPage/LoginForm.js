@@ -59,8 +59,8 @@ const LoginForm = () => {
                 justify="center"
                 alignItems="center"
             >
-                <Link to="/logged"><Button className={classes.btnOutlined} variant="outlined">Zaloguj</Button></Link>
-                <Button className={classes.btnFilled} variant="contained">Przypomnij hasło</Button>
+                <Link to="/logged"><Button className={classes.btnFilled} variant="outlined">Zaloguj</Button></Link>
+                <Button className={classes.btnOutlined} variant="contained">Przypomnij hasło</Button>
             </Grid>
         </form >
 
