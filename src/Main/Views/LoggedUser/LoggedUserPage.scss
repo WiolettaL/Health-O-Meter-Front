@@ -1,4 +1,8 @@
 .LoggedUserPage{
     margin-bottom: 50%;
     transform: translateY(50%);
+    &-calc{
+        //margin-top: -2rem;
+        position: fixed;
+    }
 }

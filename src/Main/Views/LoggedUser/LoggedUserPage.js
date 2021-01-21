@@ -6,6 +6,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Navbar from "../../../Navbar/Navbar";
 import ResultsChart from "./ResultsChart/ResultsChart";
 import OptionBox from "./OptionBox";
+import CalculatorBMI from "./CalculatorBMI/CalculatorBMI";
+import CalculatorRFM from "./CalculatorRFM/CalculatorRFM";
+import CalculatorWHR from "./CalculatorWHR/CalculatorWHR";
 
 import healthReport from "./healthReport.svg";
 import calculators from "./calculators.svg";
@@ -32,12 +35,14 @@ const LoggedUserPage = () => {
     const [optionCalc, setOptionCalc] = useState(true);
     const [optionCharts, setOptionCharts] = useState(true);
     const [btnOn, setBtnOn] = useState(null);
+    const [calcVisib, setCalcVisib] = useState("hidden");
 
     const returnBtnHandler = () => {
         setOptionResults(true);
         setOptionCalc(true);
         setOptionCharts(true);
         setBtnOn(null);
+        setCalcVisib("hidden");
     }
 
     const hideShowResults = (optionResults) => {
@@ -50,7 +55,8 @@ const LoggedUserPage = () => {
     const hideShowCalc = (optionCalc) => {
         setOptionCalc(false);
         setOptionResults(false);
-        setOptionCharts(false)
+        setOptionCharts(false);
+        setCalcVisib("CalculatorBMI");
         setBtnOn(<Button onClick={returnBtnHandler} className={classes.btnFilled} variant="contained">Wróć</Button>)
     }
 
@@ -75,7 +81,17 @@ const LoggedUserPage = () => {
                     <OptionBox onClick={() => hideShowCalc(optionCalc)} alt="Kalkulatory" primaryClassName={optionCalc ? "OptionBox" : "hidden"} src={calculators} txt="Skorzystaj z kalkulatorów dietetycznych" />
                     <OptionBox onClick={() => hideShowCharts(optionCharts)} alt="Wykresy" primaryClassName={optionCharts ? "OptionBox" : "hidden"} src={chart} txt="Śledź wyniki" />
                 </Grid>
-
+                <Grid
+                    className="LoggedUserPage-calc"
+                    container
+                    direction="row"
+                    justify="center"
+                    alignItems="center"
+                >
+                    <CalculatorBMI classes={calcVisib} />
+                    <CalculatorRFM classes={calcVisib} />
+                    <CalculatorWHR classes={calcVisib} />
+                </Grid>
                 {btnOn}
             </main>
         </React.Fragment>
