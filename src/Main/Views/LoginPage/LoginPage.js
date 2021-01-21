@@ -21,7 +21,6 @@ const LoginPage = () => {
                 <img className="Login-svg" src={LoginSvg} alt="Login"></img>
                 <LoginForm />
             </Grid>
-            <Footer />
         </React.Fragment>
     )
 }
