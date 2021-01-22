@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.92ad7baf.chunk.css",
+    "main.js": "/static/js/main.1dce109b.chunk.js",
+    "main.js.map": "/static/js/main.1dce109b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c6e59484.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c6e59484.js.map",
+    "static/js/2.e13b0a67.chunk.js": "/static/js/2.e13b0a67.chunk.js",
+    "static/js/2.e13b0a67.chunk.js.map": "/static/js/2.e13b0a67.chunk.js.map",
+    "static/js/3.3a1e8c78.chunk.js": "/static/js/3.3a1e8c78.chunk.js",
+    "static/js/3.3a1e8c78.chunk.js.map": "/static/js/3.3a1e8c78.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.92ad7baf.chunk.css.map": "/static/css/main.92ad7baf.chunk.css.map",
+    "static/js/2.e13b0a67.chunk.js.LICENSE.txt": "/static/js/2.e13b0a67.chunk.js.LICENSE.txt",
+    "static/media/Header.bcbc4d00.svg": "/static/media/Header.bcbc4d00.svg",
+    "static/media/LoginSvg.56b2e73c.svg": "/static/media/LoginSvg.56b2e73c.svg",
+    "static/media/calculators.79dc27b5.svg": "/static/media/calculators.79dc27b5.svg",
+    "static/media/chart.7d86bc97.svg": "/static/media/chart.7d86bc97.svg",
+    "static/media/healthReport.dd76c9a2.svg": "/static/media/healthReport.dd76c9a2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6e59484.js",
+    "static/js/2.e13b0a67.chunk.js",
+    "static/css/main.92ad7baf.chunk.css",
+    "static/js/main.1dce109b.chunk.js"
+  ]
+}
