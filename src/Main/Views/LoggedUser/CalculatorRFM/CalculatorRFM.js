@@ -8,7 +8,8 @@ const CalculatorRFM = props => {
     const [waistRat, setWaistRat] = useState(null);
     const [rfmResult, setRfmResult] = useState(null);
 
-    let url = `http://localhost:8080/hom/rfm?gender=${gender}&height=${height}&waistRatio=${waistRat}`
+    let url = `https://healthomater.herokuapp.com/hom/rfm?gender=${gender}&height=${height}&waistRatio=${waistRat}`
+    //let url = `http://localhost:8080/hom/rfm?gender=${gender}&height=${height}&waistRatio=${waistRat}`
     let data;
     let method = "GET"
 

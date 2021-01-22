@@ -7,4 +7,19 @@
     margin-bottom: calc(100vh-4rem);
     text-align: center;
     color: #65a099;
+    padding: 1rem;
+    box-sizing: border-box;
+        &-link{
+            transition: all .4s;
+            font-size: .8rem;
+            &:link,
+            &:active,
+            &:visited{
+                color: #42a59a;
+                text-decoration: none;
+            }
+            &:hover{
+                color: lighten(#42a59a, 40%);
+            }
+        }
 }
