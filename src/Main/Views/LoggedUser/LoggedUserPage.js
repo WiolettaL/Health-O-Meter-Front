@@ -22,7 +22,7 @@ const LoggedUserPage = () => {
             backgroundColor: "#7e9e68",
             marginLeft: "50%",
             transform: "translateX(-50%)",
-            display: "inline-flex",
+            display: "block",
             "&:hover": {
                 backgroundColor: "#2a756c"
             }
@@ -92,7 +92,7 @@ const LoggedUserPage = () => {
                     <CalculatorRFM classes={calcVisib} />
                     <CalculatorWHR classes={calcVisib} />
                 </Grid>
-                {btnOn}
+                <div className="LoggedUserPage-btnWrapper">{btnOn}</div>
             </main>
         </React.Fragment>
     )

@@ -22,8 +22,6 @@ const CalculatorRFM = props => {
                     <option disabled>Wybierz jedną z opcji:</option>
                     <option onClick={() => setGender("FEMALE")}>Kobieta</option>
                     <option onClick={() => setGender("MALE")}>Mężczyzna</option>
-                    <option onClick={() => setGender("INDETERMINATE")}>Nieokreślona</option>
-                    <option onClick={() => setGender("UNKNOWN")}>Nieznana</option>
                 </select>
                 <label forHtml="height">Wzrost:</label>
                 <input onInput={(e) => setHeight(e.target.value)} type="number"
