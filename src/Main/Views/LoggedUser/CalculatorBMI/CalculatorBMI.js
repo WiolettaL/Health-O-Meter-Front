@@ -9,7 +9,7 @@ const CalculatorBMI = props => {
     const [bmiResult, setBmiResult] = useState(null);
     let data;
     let method = "GET";
-    let url = `http://localhost:8080/hom/bmi?height=${height}&weight=${weight}`;
+    let url = `https://healthomater.herokuapp.com/hom/bmi?height=${height}&weight=${weight}`;
     if (bmiResult == null) {
         return (
             <div className={props.classes}>

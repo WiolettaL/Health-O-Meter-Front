@@ -7,7 +7,7 @@ const CalculatorWHR = props => {
     const [waistRat, setWaistRat] = useState(null);
     const [whrResult, setWhrResult] = useState(null);
 
-    let url = `http://localhost:8080/hom/whr?waistRatio=${waistRat}&hipRatio=${hipsRat}`
+    let url = `https://healthomater.herokuapp.com/hom/whr?waistRatio=${waistRat}&hipRatio=${hipsRat}`;
     let data;
     let method = "GET"
 
