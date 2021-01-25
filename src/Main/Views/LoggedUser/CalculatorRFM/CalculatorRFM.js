@@ -3,7 +3,7 @@ import { useState } from "react";
 import getList from "../getList";
 
 const CalculatorRFM = props => {
-    const [gender, setGender] = useState(null);
+    const [gender, setGender] = useState("FEMALE");
     const [height, setHeight] = useState(null);
     const [waistRat, setWaistRat] = useState(null);
     const [rfmResult, setRfmResult] = useState(null);
