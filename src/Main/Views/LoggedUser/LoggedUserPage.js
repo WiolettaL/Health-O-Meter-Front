@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Navbar from "../../../Navbar/Navbar";
-import ResultsChart from "./ResultsChart/ResultsChart";
 import OptionBox from "./OptionBox";
 import CalculatorBMI from "./CalculatorBMI/CalculatorBMI";
 import CalculatorRFM from "./CalculatorRFM/CalculatorRFM";
@@ -30,40 +29,29 @@ const LoggedUserPage = () => {
     }));
 
     const classes = useStyles();
-
-    const [optionResults, setOptionResults] = useState(true);
-    const [optionCalc, setOptionCalc] = useState(true);
-    const [optionCharts, setOptionCharts] = useState(true);
     const [btnOn, setBtnOn] = useState(null);
     const [calcVisib, setCalcVisib] = useState("hidden");
+    const [options, setOptions] = useState({ results: true, calc: true, charts: true })
 
     const returnBtnHandler = () => {
-        setOptionResults(true);
-        setOptionCalc(true);
-        setOptionCharts(true);
+        setOptions({ results: true, calc: true, charts: true })
         setBtnOn(null);
         setCalcVisib("hidden");
     }
 
-    const hideShowResults = (optionResults) => {
-        setOptionResults(false);
-        setOptionCalc(false);
-        setOptionCharts(false);
+    const hideShowResults = () => {
+        setOptions({ results: false, calc: false, charts: false })
         setBtnOn(<Button onClick={returnBtnHandler} className={classes.btnFilled} variant="contained">Wróć</Button>)
     }
 
-    const hideShowCalc = (optionCalc) => {
-        setOptionCalc(false);
-        setOptionResults(false);
-        setOptionCharts(false);
+    const hideShowCalc = () => {
+        setOptions({ results: false, calc: false, charts: false })
         setCalcVisib("CalculatorBMI");
         setBtnOn(<Button onClick={returnBtnHandler} className={classes.btnFilled} variant="contained">Wróć</Button>)
     }
 
-    const hideShowCharts = (optionCharts) => {
-        setOptionCharts(false);
-        setOptionResults(false);
-        setOptionCalc(false);
+    const hideShowCharts = () => {
+        setOptions({ results: false, calc: false, charts: false })
         setBtnOn(<Button onClick={returnBtnHandler} className={classes.btnFilled} variant="contained">Wróć</Button>)
     }
 
@@ -77,9 +65,9 @@ const LoggedUserPage = () => {
                     justify="center"
                     alignItems="center"
                 >
-                    <OptionBox onClick={() => hideShowResults(optionResults)} primaryClassName={optionResults ? "OptionBox" : "OptionBox hidden"} alt="Wyniki" src={healthReport} txt="Dodaj swoje wyniki badań" />
-                    <OptionBox onClick={() => hideShowCalc(optionCalc)} alt="Kalkulatory" primaryClassName={optionCalc ? "OptionBox" : "hidden"} src={calculators} txt="Skorzystaj z kalkulatorów dietetycznych" />
-                    <OptionBox onClick={() => hideShowCharts(optionCharts)} alt="Wykresy" primaryClassName={optionCharts ? "OptionBox" : "hidden"} src={chart} txt="Śledź wyniki" />
+                    <OptionBox onClick={() => hideShowResults(options)} primaryClassName={options.results ? "OptionBox" : "OptionBox hidden"} alt="Wyniki" src={healthReport} txt="Dodaj swoje wyniki badań" />
+                    <OptionBox onClick={() => hideShowCalc(options)} alt="Kalkulatory" primaryClassName={options.calc ? "OptionBox" : "hidden"} src={calculators} txt="Skorzystaj z kalkulatorów dietetycznych" />
+                    <OptionBox onClick={() => hideShowCharts(options)} alt="Wykresy" primaryClassName={options.charts ? "OptionBox" : "hidden"} src={chart} txt="Śledź wyniki" />
                 </Grid>
                 <Grid
                     className="LoggedUserPage-calc"
