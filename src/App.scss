@@ -1,0 +1,31 @@
+@import "./scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+html,
+body{
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: $bgrClr;
+  margin-bottom: -4rem;
+  font-family: 'Prompt', sans-serif;
+
+}
+
+.Link{
+  &:link,
+  &:active,
+  &:visited{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.hidden{
+  display: none;
+}

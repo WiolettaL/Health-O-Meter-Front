@@ -1,3 +1,5 @@
+@import "../../../scss/variables";
+
 .OptionBox{
     border: solid 1px transparent;
     cursor: pointer;
@@ -5,7 +7,7 @@
     width: 15rem;
         &:hover{
             border-radius: 10px;
-            background-color: rgba(183, 204, 171, .9);
+            background-color: $optionBoxClrHv;
             font-size: 1.2rem;
         }
         &-txt{
@@ -13,7 +15,7 @@
             top: -10rem;
             text-align: center;
             text-transform: uppercase;
-            background-color: rgba(245, 245, 220, .8);
+            background-color: $optionBoxTxtClr;
             box-sizing: border-box;
             border-radius: 8px;
             padding: 1.3rem;

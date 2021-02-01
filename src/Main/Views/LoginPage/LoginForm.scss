@@ -1,6 +1,12 @@
+@import "../../../scss/variables";
+
 .Login{
     &-form{
-        margin-top: 3rem;
+        margin-top: 12rem;
+        background-color: $loginFmClr;
+        border: solid 1px transparent;
+        border-radius: 10px;
+        padding: 3rem;
     }
     &-heading{
         color: #184d47;

@@ -17,11 +17,11 @@ const LoginForm = () => {
             margin: ".8rem"
         },
         btnFilled: {
-            color: "#c9eab2",
-            backgroundColor: "#7e9e68",
+            color: "#ffe3de",
+            backgroundColor: "#11698e",
             margin: ".8rem",
             "&:hover": {
-                backgroundColor: "#2a756c"
+                backgroundColor: "#51adcf"
             }
         },
         rowButtons: {
@@ -43,14 +43,14 @@ const LoginForm = () => {
                     required
                     id="standard-required"
                     label="Login"
-                    color="secondary"
+                    color="primary"
                 />
                 <TextField
                     id="standard-password-input"
                     label="Hasło"
                     type="password"
                     autoComplete="current-password"
-                    color="secondary"
+                    color="primary"
                 />
             </Grid>
             <Grid className={classes.rowButtons}

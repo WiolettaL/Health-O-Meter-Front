@@ -1,10 +1,16 @@
+@import "../scss/variables";
+
 .Header{
-    height: 20vh;
+    height: 80vh;
+    width: 80vw;
     display: flex;
+    flex-direction: row;
     padding: 1rem;
-    color: #31326f;
+    color: $hdrTxtClr;
         &-svg{
-            height: 25rem;
-            width: auto;
+            height: 78vh;
+            position: absolute;
+            left: 4rem;
+            top: 8rem;
         }
 }

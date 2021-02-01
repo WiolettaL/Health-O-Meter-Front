@@ -1,15 +1,20 @@
+@import "../scss/variables";
+
 .HeaderBox{
-    border: solid 1px #c2d6b6;
+    border: solid 1px transparent;
+    border-radius: 8px;
     display: flex;
+    background-color: $hdrBoxClr;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     height: 15rem;
-    width: 15rem;
+    min-width: 15rem;
+    max-width: 25rem;
         &-txt{
             padding: 1.1rem;
-            font-size: 1.1rem;
-            color: #184d47;
+            font-size: 1.5rem;
+            color: $hdrTxtClr;
             font-weight: 600;
             text-transform: uppercase;
         }

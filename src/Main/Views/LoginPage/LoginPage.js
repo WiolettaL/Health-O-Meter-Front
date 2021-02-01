@@ -16,7 +16,7 @@ const LoginPage = () => {
             <Grid
                 container
                 direction="row"
-                justify="space-around"
+                justify="center"
                 alignItems="center">
                 <img className="Login-svg" src={LoginSvg} alt="Login"></img>
                 <LoginForm />

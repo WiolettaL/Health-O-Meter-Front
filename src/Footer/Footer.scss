@@ -1,12 +1,15 @@
+@import "../scss/variables";
+
 .Footer{
     width: 100vw;
     height: 4rem;
-    background-color: #143f3a;
+    background-color: $ftrClr;
     bottom: 0;
     position: absolute;
-    margin-bottom: calc(100vh-4rem);
+    //margin-bottom: calc(100vh-4rem);
+    margin-top: 4rem;
     text-align: center;
-    color: #65a099;
+    color: $ftrTxtClr;
     padding: 1rem;
     box-sizing: border-box;
         &-link{
@@ -15,11 +18,17 @@
             &:link,
             &:active,
             &:visited{
-                color: #42a59a;
+                color: $ftrTxtClr;
                 text-decoration: none;
             }
             &:hover{
-                color: lighten(#42a59a, 40%);
+                color: lighten($ftrTxtClr, 20%);
             }
+        }
+        &-github{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
 }

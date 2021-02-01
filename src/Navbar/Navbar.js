@@ -21,7 +21,7 @@ const Navbar = (props) => {
             marginRight: "2.5rem",
         },
         appBar: {
-            backgroundColor: "#184d47"
+            backgroundColor: "#43658b"
         },
         menuButton: {
             marginRight: theme.spacing(2),
@@ -29,7 +29,7 @@ const Navbar = (props) => {
         title: {
             flexGrow: 1,
         },
-        hidden:{
+        hidden: {
             display: "none"
         }
     }));
@@ -40,9 +40,9 @@ const Navbar = (props) => {
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     {props.isLoggedIn ? <MenuIcon /> : <MenuIcon className={classes.hidden} />}
                 </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                    Health-O-Meter
-                </Typography>
+                    <Typography variant="h6" className={classes.title}>
+                    <Link className="Link" to="/">Health-O-Meter</Link>
+                    </Typography>
                 <Link className="Link" to={props.linkTo1}>
                     <Button className={classes.button} color="inherit">{props.navMenuBtn1}</Button>
                 </Link>

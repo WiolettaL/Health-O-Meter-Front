@@ -14,21 +14,22 @@ import "./Header.scss";
 const Header = () => {
     return (
         <header className="Header">
+            <img className="Header-svg" src={headerSvg} alt="Header" />
+
             <Grid
                 container
-                direction="row"
-                justify="space-around"
-                alignItems="center"
+                direction="column"
+                justify="space-between"
+                alignItems="flex-end"
             >
-                <img className="Header-svg" src={headerSvg} alt="Header"/>
                 <HeaderBox text="Zadbaj o swoje zdrowie">
-                    <FavoriteTwoToneIcon/>
+                    <FavoriteTwoToneIcon />
                 </HeaderBox>
                 <HeaderBox text="Zapisuj wyniki badań">
-                    <NoteAddTwoToneIcon/>
+                    <NoteAddTwoToneIcon />
                 </HeaderBox>
                 <HeaderBox text="i śledź rezultaty na przestrzeni czasu">
-                    <TrendingUpTwoToneIcon/>
+                    <TrendingUpTwoToneIcon />
                 </HeaderBox>
             </Grid>
         </header>
