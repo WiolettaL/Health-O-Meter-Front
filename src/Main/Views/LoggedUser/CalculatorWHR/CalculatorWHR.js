@@ -30,11 +30,11 @@ const CalculatorWHR = props => {
                 <h2>Kalkulator WHR</h2>
                 <p>Wprowadź następujące informacje: </p>
                 <label forHtml="waistCircum">Obwód talii:</label>
-                <input onInput={(e) => setWaistRat(e.target.value)} type="number"
+                <input onInput={(e) => setWaistRat(Math.abs(e.target.value))} type="number"
                     id="waistRat"
                     name="waistRat"></input>
                 <label forHtml="hipsCircum">Obwód bioder:</label>
-                <input onInput={(e) => setHipsRat(e.target.value)} type="number"
+                <input onInput={(e) => setHipsRat(Math.abs(e.target.value))} type="number"
                     id="waistRat"
                     name="waistRat"></input>
                 <Loader class={loaderState.loader} />

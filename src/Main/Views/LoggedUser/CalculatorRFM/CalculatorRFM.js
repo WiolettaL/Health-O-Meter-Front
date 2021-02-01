@@ -36,11 +36,11 @@ const CalculatorRFM = props => {
                     <option onClick={() => setGender("MALE")}>Mężczyzna</option>
                 </select>
                 <label forHtml="height">Wzrost:</label>
-                <input onInput={(e) => setHeight(e.target.value)} type="number"
+                <input onInput={(e) => setHeight(Math.abs(e.target.value))} type="number"
                     id="height"
                     name="height"></input>
                 <label forHtml="waistCircum">Obwód talii:</label>
-                <input onInput={(e) => setWaistRat(e.target.value)} type="number"
+                <input onInput={(e) => setWaistRat(Math.abs(e.target.value))} type="number"
                     id="waistRat"
                     name="waistRat"></input>
                 <Loader class={loaderState.loader} />

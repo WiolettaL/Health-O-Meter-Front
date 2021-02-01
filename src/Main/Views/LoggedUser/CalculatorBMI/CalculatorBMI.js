@@ -31,11 +31,11 @@ const CalculatorBMI = props => {
                 <h2>Kalkulator BMI</h2>
                 <p>Wprowadź następujące informacje: </p>
                 <label forHtml="height">Wzrost:</label>
-                <input onInput={e => setHeight(e.target.value)} type="number"
+                <input onInput={e => setHeight(Math.abs(e.target.value))} type="number"
                     id="height"
                     name="height"></input>
                 <label forHtml="weight">Waga:</label>
-                <input onInput={e => setWeight(e.target.value)} type="number"
+                <input onInput={e => setWeight(Math.abs(e.target.value))} type="number"
                     id="weight"
                     name="weight"></input>
                 <Loader class={loaderState.loader} />
