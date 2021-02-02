@@ -29,3 +29,10 @@ body{
 .hidden{
   display: none;
 }
+
+.row{
+  display: flex;
+  flex-direction: row;
+  margin-top: .5rem;
+  justify-content: center;
+}

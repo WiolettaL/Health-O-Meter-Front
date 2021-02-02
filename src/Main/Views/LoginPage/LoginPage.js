@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 
 import Navbar from "../../../Navbar/Navbar";
 import LoginForm from "./LoginForm";
-import Footer from "../../../Footer/Footer";
 import LoginSvg from "./LoginSvg.svg";
 
 import "./LoginPage.scss";
