@@ -3,7 +3,6 @@
 
 html,
 body{
-  height: 100%;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -12,9 +11,18 @@ body{
 
 body{
   background-color: $bgrClr;
-  margin-bottom: -4rem;
+  //margin-bottom: -4rem;
   font-family: 'Prompt', sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
 
+.App{
+  padding-bottom: 4rem;
+  height: 100%;
+  @media (max-width: 840px){
+    padding-bottom: 5.5rem;
+  }
 }
 
 .Link{

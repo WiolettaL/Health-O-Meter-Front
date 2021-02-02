@@ -7,14 +7,20 @@
     bottom: 0;
     position: absolute;
     //margin-bottom: calc(100vh-4rem);
-    margin-top: 4rem;
+    //margin-top: 4rem;
     text-align: center;
     color: $ftrTxtClr;
     padding: 1rem;
     box-sizing: border-box;
+    @media (max-width: 840px){
+        height: 5.5rem;
+    }
         &-link{
             transition: all .4s;
             font-size: .8rem;
+            @media (max-width: 375px){
+                font-size: .5rem;
+            }
             &:link,
             &:active,
             &:visited{

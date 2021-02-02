@@ -9,7 +9,7 @@ const Footer = () => {
             <Grid
                 container
                 direction="row"
-                justify="space-around"
+                justify="space-evenly"
                 alignItems="center"
             >
                 <div className="Footer-github">
