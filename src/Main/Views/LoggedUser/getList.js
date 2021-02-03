@@ -9,7 +9,7 @@ const getList = async(data, url, method)=>{
         body: JSON.stringify(data)
     });
     try{
-        const data = await response.json();
+        data = await response.json();
         return data;
     }catch(error){
         console.log("Error:", error);

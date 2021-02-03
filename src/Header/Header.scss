@@ -17,15 +17,11 @@
                 &-wrapper{
                     height: 100vh;
                     width: 65vw;
-                    background-color: white;
                     position: absolute;
                     top: 0;
                     left: 0;
                     z-index: -1;
-                    background: url("./HeaderBgr.svg");
-                    background-position: top;
-                    background-size: cover;
-                    background-repeat: no-repeat;
+                    background: top / cover no-repeat url("./HeaderBgr.svg");
                     @media (max-width: 1024px){
                         flex-direction: column;
                         width: 100vw;

@@ -65,9 +65,9 @@ const LoggedUserPage = () => {
                     justify="center"
                     alignItems="center"
                 >
-                    <OptionBox onClick={() => hideShowResults(options)} primaryClassName={options.results ? "OptionBox" : "OptionBox hidden"} alt="Wyniki" src={healthReport} txt="Dodaj swoje wyniki badań" />
-                    <OptionBox onClick={() => hideShowCalc(options)} alt="Kalkulatory" primaryClassName={options.calc ? "OptionBox" : "hidden"} src={calculators} txt="Skorzystaj z kalkulatorów dietetycznych" />
-                    <OptionBox onClick={() => hideShowCharts(options)} alt="Wykresy" primaryClassName={options.charts ? "OptionBox" : "hidden"} src={chart} txt="Śledź wyniki" />
+                    <OptionBox onClick={() => hideShowResults()} primaryClassName={options.results ? "OptionBox" : "OptionBox hidden"} alt="Wyniki" src={healthReport} txt="Dodaj swoje wyniki badań" />
+                    <OptionBox onClick={() => hideShowCalc()} alt="Kalkulatory" primaryClassName={options.calc ? "OptionBox" : "hidden"} src={calculators} txt="Skorzystaj z kalkulatorów dietetycznych" />
+                    <OptionBox onClick={() => hideShowCharts()} alt="Wykresy" primaryClassName={options.charts ? "OptionBox" : "hidden"} src={chart} txt="Śledź wyniki" />
                 </Grid>
                 <Grid
                     className="LoggedUserPage-calc"

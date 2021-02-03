@@ -2,7 +2,6 @@ import React from "react";
 
 import HeaderBox from "./HeaderBox";
 
-import Grid from '@material-ui/core/Grid';
 import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
 import NoteAddTwoToneIcon from '@material-ui/icons/NoteAddTwoTone';
 import TrendingUpTwoToneIcon from '@material-ui/icons/TrendingUpTwoTone';
