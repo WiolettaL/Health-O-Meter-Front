@@ -20,7 +20,7 @@ const Footer = () => {
                     <a rel="noreferrer" target="_blank" className="Footer-link" href="https://github.com/zh-betina"><GitHubIcon /> zh-betina</a>
                 </div>
                 <div>
-                    <a rel="noreferrer" target="_blank" className="Footer-link" href="https://www.vecteezy.com/free-vector/medical">Medical Vectors by Vecteezy</a>
+                    <a rel="noreferrer" target="_blank" className="Footer-link" href='https://rawpixel.com/image/2292416/free-illustration-vector-medical-medical-background-pharmacy'>Image by rawpixel.com</a>
                 </div>
             </Grid>
         </footer>

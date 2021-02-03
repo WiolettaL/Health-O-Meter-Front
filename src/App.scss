@@ -4,6 +4,7 @@
 html,
 body{
   width: 100vw;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -11,25 +12,25 @@ body{
 
 body{
   background-color: $bgrClr;
-  //margin-bottom: -4rem;
   font-family: 'Prompt', sans-serif;
-  position: relative;
-  min-height: 100vh;
+  position: absolute;
+
 }
 
 .App{
-  padding-bottom: 4rem;
+  position: absolute;
   height: 100%;
   @media (max-width: 840px){
     padding-bottom: 5.5rem;
   }
 }
 
+
 .Link{
   &:link,
   &:active,
   &:visited{
-    color: white;
+    color: #19456b;
     text-decoration: none;
   }
 }

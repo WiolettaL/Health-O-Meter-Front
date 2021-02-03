@@ -5,8 +5,7 @@ import "./HeaderBox.scss"
 const HeaderBox = (props) =>{
     return(
         <div className="HeaderBox">
-            <span>{props.children}</span>
-            <p className="HeaderBox-txt">{props.text}</p>
+        <p className="HeaderBox-txt"><span>{props.children}</span>{props.text}</p>
         </div>
     )
 }

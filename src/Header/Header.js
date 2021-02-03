@@ -14,14 +14,11 @@ import "./Header.scss";
 const Header = () => {
     return (
         <header className="Header">
-            <img className="Header-svg" src={headerSvg} alt="Header" />
-
-            <Grid
-                container
-                direction="column"
-                justify="space-between"
-                alignItems="flex-end"
-            >
+            <div className="Header-svg-wrapper">
+                <h1 className="Header-heading">Health-O-Meter</h1>
+                <p className="Header-heading-sub">Twój osobisty miernik zdrowia</p>
+            </div>
+            <div className="GridHeader-col">
                 <HeaderBox text="Zadbaj o swoje zdrowie">
                     <FavoriteTwoToneIcon />
                 </HeaderBox>
@@ -31,7 +28,7 @@ const Header = () => {
                 <HeaderBox text="i śledź rezultaty na przestrzeni czasu">
                     <TrendingUpTwoToneIcon />
                 </HeaderBox>
-            </Grid>
+            </div>
         </header>
     )
 }

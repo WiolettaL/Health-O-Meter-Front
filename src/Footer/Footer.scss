@@ -2,9 +2,11 @@
 
 .Footer{
     width: 100vw;
-    height: 4rem;
+    min-height: 4rem;
+    margin-top: -4rem;
     background-color: $ftrClr;
     bottom: 0;
+    clear: both;
     position: absolute;
     //margin-bottom: calc(100vh-4rem);
     //margin-top: 4rem;

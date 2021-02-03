@@ -12,9 +12,10 @@ const LoginPage = () => {
     return (
         <React.Fragment>
             <Navbar navMenuBtn1="Strona Główna" linkTo1="/" navMenuBtn2="Utwórz konto" linkTo2="/signup"></Navbar>
-            <Grid
+            <Grid  
+                className="Login-wrapper"
                 container
-                direction="row"
+                direction="column"
                 justify="center"
                 alignItems="center">
                 <img className="Login-svg" src={LoginSvg} alt="Login"></img>

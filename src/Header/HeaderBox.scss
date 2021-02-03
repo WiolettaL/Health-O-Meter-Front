@@ -5,17 +5,20 @@
     border-radius: 8px;
     display: flex;
     background-color: $hdrBoxClr;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    height: 15rem;
+    height: 6rem;
     min-width: 15rem;
     max-width: 25rem;
         &-txt{
-            padding: 1.1rem;
+            //padding: 1.1rem;
             font-size: 1.5rem;
             color: $hdrTxtClr;
             font-weight: 600;
             text-transform: uppercase;
+            @media (max-width: 1024px){
+                font-size: 1.2rem;
+            }
         }
 }

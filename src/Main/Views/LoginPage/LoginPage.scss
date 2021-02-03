@@ -1,9 +1,16 @@
 .Login{
-    &-svg{
-        height: 40vh;
+    &-wrapper{
         position: absolute;
-        left: 25%;
-        top: 35%;
-        transform: translateY(-50%);
+    }
+    &-svg{
+        height: 30vh;
+        position: relative;
+        top: 2rem;
+        left: -13rem;
+        z-index: 1;
+        @media (max-width: 666px){
+            left: 0;
+            top: 0;
+        }
     }
 }

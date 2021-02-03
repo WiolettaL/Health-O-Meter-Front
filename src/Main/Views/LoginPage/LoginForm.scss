@@ -2,11 +2,15 @@
 
 .Login{
     &-form{
-        margin-top: 12rem;
         background-color: $loginFmClr;
         border: solid 1px transparent;
         border-radius: 10px;
         padding: 3rem;
+        position: absolute;
+        top: 10rem;
+        @media (max-width: 666px){
+            width: 100vw;
+        }
     }
     &-heading{
         color: #184d47;
