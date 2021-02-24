@@ -4,10 +4,10 @@ Original web-based healthcare application intended to collect and categorize use
 
 # General project overview:
 
-- [] Collection of user’s basic health related information (such as blood group, weight, height)
+- [ ] Collection of user’s basic health related information (such as blood group, weight, height)
 - [x] Body fat percentage calculation performed according to the chosen methodology (body mass index (BMI), hips-to-waist ratio (HTW), body adiposity index (BAI) or waist circumference measurement (WCM)).
-- [] Notifications for incoming medical appointments, healthcare related events, free of charge preventive medical examination opportunities
-- [] Data visualization based on recent user inputs, such as blood pressure and/or medical appointment.
+- [ ] Notifications for incoming medical appointments, healthcare related events, free of charge preventive medical examination opportunities
+- [ ] Data visualization based on recent user inputs, such as blood pressure and/or medical appointment.
 
 # Technology stack and tools:
 
